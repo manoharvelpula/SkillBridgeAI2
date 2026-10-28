@@ -44,17 +44,20 @@ radial-gradient(900px 600px at 50% 112%, rgba(34,226,122,.11), transparent 60%),
 .stApp [data-testid="stCaptionContainer"], .stApp [data-testid="stCaptionContainer"] * { color: var(--muted) !important; }
 .stApp label, .stApp label *, .stApp [data-testid="stWidgetLabel"], .stApp [data-testid="stWidgetLabel"] * { color: var(--text) !important; }
 .stApp a { color: var(--teal) !important; text-decoration: none; }
-.stApp a:hover { text-decoration: underline; }
-.stApp input, .stApp textarea { color: var(--text) !important; background: rgba(255,255,255,.06) !important; caret-color: var(--green); -webkit-text-fill-color: var(--text) !important; }
-.stApp input::placeholder, .stApp textarea::placeholder { color: #7F8CAE !important; opacity: 1 !important; -webkit-text-fill-color: #7F8CAE !important; }
-.stApp div[data-baseweb="input"], .stApp div[data-baseweb="base-input"], .stApp div[data-baseweb="textarea"] { background: rgba(255,255,255,.06) !important; border-color: var(--line) !important; border-radius: 10px !important; }
-.stApp div[data-baseweb="select"] > div { background: rgba(255,255,255,.06) !important; border-color: var(--line) !important; border-radius: 10px !important; }
-.stApp div[data-baseweb="select"] *, .stApp div[data-baseweb="select"] svg { color: var(--text) !important; fill: var(--text) !important; }
-span[data-baseweb="tag"] { background: rgba(34,226,122,.18) !important; border: 1px solid rgba(34,226,122,.45) !important; }
-span[data-baseweb="tag"] * { color: #CFFAE2 !important; }
-div[data-baseweb="popover"] > div, div[data-baseweb="popover"] ul, ul[role="listbox"] { background: #0E1426 !important; border: 1px solid var(--line); border-radius: 12px; }
-div[data-baseweb="popover"] li, div[data-baseweb="popover"] li *, li[role="option"], li[role="option"] * { color: var(--text) !important; background: transparent !important; }
-div[data-baseweb="popover"] li:hover, li[role="option"]:hover, li[aria-selected="true"] { background: rgba(34,226,122,.14) !important; }
+/* ---- inputs: light background, black text ---- */
+.stApp input, .stApp textarea { color: #000 !important; -webkit-text-fill-color: #000 !important; background: #FFFFFF !important; caret-color: #000; }
+.stApp input::placeholder, .stApp textarea::placeholder { color: #6B7280 !important; opacity: 1 !important; -webkit-text-fill-color: #6B7280 !important; }
+.stApp div[data-baseweb="input"], .stApp div[data-baseweb="base-input"], .stApp div[data-baseweb="textarea"] { background: #FFFFFF !important; border: 1px solid #CBD5E1 !important; border-radius: 10px !important; }
+.stApp div[data-baseweb="select"] > div { background: #FFFFFF !important; border: 1px solid #CBD5E1 !important; border-radius: 10px !important; }
+.stApp div[data-baseweb="select"] *, .stApp div[data-baseweb="select"] svg { color: #000 !important; -webkit-text-fill-color: #000 !important; fill: #000 !important; }
+.stApp div[data-baseweb="select"] input::placeholder { color: #6B7280 !important; -webkit-text-fill-color: #6B7280 !important; }
+/* selected skill tags (multiselect) */
+span[data-baseweb="tag"] { background: #DCFCE7 !important; border: 1px solid #22C55E !important; }
+span[data-baseweb="tag"] *, span[data-baseweb="tag"] svg { color: #064E3B !important; fill: #064E3B !important; -webkit-text-fill-color: #064E3B !important; }
+/* dropdown menus */
+div[data-baseweb="popover"] > div, div[data-baseweb="popover"] ul, ul[role="listbox"] { background: #FFFFFF !important; border: 1px solid #CBD5E1; border-radius: 12px; }
+div[data-baseweb="popover"] li, div[data-baseweb="popover"] li *, li[role="option"], li[role="option"] * { color: #000 !important; -webkit-text-fill-color: #000 !important; background: transparent !important; }
+div[data-baseweb="popover"] li:hover, li[role="option"]:hover, li[aria-selected="true"] { background: #DCFCE7 !important; }
 [data-testid="stFileUploaderDropzone"] { background: rgba(255,255,255,.05) !important; border: 1px dashed rgba(45,212,191,.55) !important; border-radius: 14px !important; }
 [data-testid="stFileUploaderDropzone"], [data-testid="stFileUploaderDropzone"] * { color: var(--text) !important; }
 [data-testid="stFileUploaderDropzone"] small { color: var(--muted) !important; }
